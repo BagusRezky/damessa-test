@@ -15,9 +15,9 @@ Simple API pakai Node.js + TypeScript + Express + Sequelize (MySQL) + Umzug (mig
    - PNPM: `pnpm install`
    - NPM: `npm install`
 3. Siapkan `.env` (contoh di bawah) dan pastikan database MySQL sudah dibuat.
-4. Run migration & seeder:
+4. Run migration:
    - `pnpm migrate:up`
-   - Atau pakai: `pnpm db:fresh` (drop semua seed/migrasi lalu setup ulang dari awal)
+   - Atau pakai: `pnpm db:fresh` (drop semua migrasi lalu setup ulang dari awal)
 5. Dev mode (hot-reload): `pnpm dev`
 6. Build production: `pnpm build`
 7. Start production build: `pnpm start`
@@ -60,7 +60,8 @@ Notes:
 
 - Koleksi Postman ada di folder `docs/`: `Damessa Test API.postman_collection.json`.
 - Import ke Postman, sesuaikan `base_url` kalau perlu (default `http://localhost:3000/api`).
-- Login dulu biar variabel `{{token}}` otomatis keisi sebelum akses endpoint yang butuh Bearer token.
+- Register dulu biar variabel `{{token}}` otomatis keisi sebelum akses endpoint yang butuh Bearer token.
+- Login
 
 ## Folder structure
 
